@@ -1,0 +1,56 @@
+#checkout-forms {
+    border: 3px solid black;
+    border-radius: 7px;
+    padding: 11px;
+    width: 27em;
+}
+.address-area, .payment-area {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
+}
+.address-area input, #creditCardPayment div {
+    margin-bottom: 6px;
+}
+input[type="text"] {
+    height: 20px;
+}
+
+#name-container, #address-container, #gender-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 15px;
+}
+#gender-container {
+    border: none;
+    padding: 0;
+}
+#gender-container input {
+    margin-right: 5px;
+}
+#gender-container label {
+    margin-right: 10px;
+}
+
+#creditCardPayment {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 6px;
+    font-size: 12px;
+}
+#number-container {
+    grid-column: 1 / span 2;
+    width: 100%;
+}
+#creditCardPayment label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+#number {
+    width: 100%;
+}
+#cvv {
+    width: 100%;
+}

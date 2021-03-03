@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link href="../style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <!--<iframe src="../navigation.html" title="Navigation">></iframe>-->
+    <main>
+        <div id="checkout-forms">
+            <div class="address-area">
+                <form id="address">
+                    <h4 style="text-align: center">Lieferadresse eingeben</h4>
+                    <fieldset id="gender-container">
+                        <div>Anrede:</div>
+                        <div>
+                            <input id="male" name="gender" value="Herr" type="radio"/><label for="male">Herr</label>
+                            <input id="female" name="gender" value="Frau" type="radio"/><label for="female">Frau</label>
+                        </div>
+                    </fieldset>
+                    <div id="name-container">
+                        <label for="firstname">Vorname:</label>
+                        <input id="firstname" name="firstname" type="text"/>
+
+                        <label for="lastname">Nachname:</label>
+                        <input id="lastname" name="lastname" type="text"/>
+                    </div>
+                    <div id="address-container">
+                        <label for="street">Straße/Hausnr.:</label>
+                        <input id="street" name="street" type="text"/>
+
+                        <label for="plz">PLZ:</label>
+                        <input id="plz" name="plz" type="text"/>
+
+                        <label for="town">Stadt:</label>
+                        <input id="town" name="town" type="text"/>
+                    </div>
+                </form>
+            </div>
+            <div class="payment-area">
+                <h4 style="text-align: center">Bezahlen</h4>
+                <form id="creditCardPayment">
+                    <div id="number-container">
+                        <label for="number">Kreditkartennummer</label>
+                        <input id="number" name="number" type="text"/>
+                    </div>
+                    <div id="expirydate-container">
+                        <label for="expirydate">Gültig bis (Monat/Jahr)</label>
+                        <input id="expirydate" name="expirydate" type="text"/>
+                    </div>
+                    <div id="cvv-container">
+                        <label for="cvv">Prüfnummer</label>
+                        <input id="cvv" name="cvv" type="text"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="costs-area">
+
+        </div>
+    </main>
+</body>
+</html>
