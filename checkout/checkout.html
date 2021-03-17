@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Checkout</title>
     <link href="../style.css" type="text/css" rel="stylesheet"/>
+    <link href="cart-favicon.ico" type="image/x-icon" rel="icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <!--<iframe src="../navigation.html" title="Navigation">></iframe>-->
@@ -35,6 +37,9 @@
 
                         <label for="town">Stadt:</label>
                         <input id="town" name="town" type="text"/>
+
+                        <label for="email">E-Mail:</label>
+                        <input id="email" name="email" type="text"/>
                     </div>
                 </div>
             </div>
@@ -57,13 +62,49 @@
 
                 <input id="consent" name="consent" type="checkbox" value="Ich stimme den Allgemeinen Geschäftsbedingungen zu.">Ich stimme den Allgemeinen Geschäftsbedingungen zu.</input>
                 <div id="actions">
-                    <a id="pay-cancel" href="/">Abbrechen</a>
+                    <a id="pay-cancel" href="../index.html">Abbrechen</a>
                     <input id="pay-complete" type="submit" value="Bezahlen"/>
                 </div>
             </div>
         </form>
         <div class="costs-area">
-
+            <h4 style="text-align: center">Zusammenfassung</h4>
+            <table id="products-overview">
+                <tbody>
+                    <tr>
+                        <th>Artikel</th>
+                        <th>Anzahl</th>
+                        <th>Preis</th>
+                    </tr>
+                    <tr>
+                        <td>Samsung Smart TV</td>
+                        <td>1x</td>
+                        <td>499,99 €</td>
+                    </tr>
+                    <tr>
+                        <td>Playstation 5</td>
+                        <td>2x</td>
+                        <td>1399,99 €</td>
+                    </tr>
+                    <tr>
+                        <td class="bold-table-border">Apple EarPods</td>
+                        <td class="bold-table-border">2x</td>
+                        <td class="bold-table-border">43,99 €</td>
+                    </tr>
+                    <tr id="vat">
+                        <td colspan="2">MwSt. 19%</td>
+                        <td>369,35 €</td>
+                    </tr>
+                    <tr id="shipping-costs">
+                        <td colspan="2" class="bold-table-border">Versandkosten</td>
+                        <td class="bold-table-border">10,00 €</td>
+                    </tr>
+                    <tr id="total-costs">
+                        <td colspan="2">Gesamt</td>
+                        <td>2323,32 €</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
 </body>

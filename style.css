@@ -1,9 +1,37 @@
-#checkout-form {
-    border: 3px solid black;
-    border-radius: 7px;
-    padding: 11px;
-    width: 27em;
+body {
     background-color: aliceblue;
+}
+main {
+    padding: 11px;
+    width: 50em;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media all and (max-width: 765px) {
+    main {
+        flex-flow: column-reverse wrap;
+        width: 100%;
+        padding: 4px;
+    }
+    .costs-area {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    #products-overview {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media all and (max-width: 450px) {
+    .address-area, .payment-area, #creditCardPayment {
+        width: 100% !important;
+        padding: 3px;
+    }
+    #pay-cancel, #pay-complete {
+        width: 40% !important;
+    }
 }
 .address-area, .payment-area {
     margin-left: auto;
@@ -60,14 +88,50 @@ input[type="text"] {
 }
 #actions {
     margin-top: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#pay-cancel {
+    display: block;
+    width: 10em;
+    height: 2.2em;
+    font-size: 16px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-top: 16px;
 }
 #pay-complete {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 10em;
     height: 3.5em;
     font-weight: bold;
     font-size: 16px;
     background-color: lightgreen;
+    border: 2px solid black;
+}
+
+.costs-area {
+    margin-left: 4rem;
+}
+#products-overview, #products-overview th, #products-overview td {
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+#products-overview th, #products-overview td {
+    padding: 5px;
+}
+.bold-table-border {
+    border-bottom-width: 2px !important;
+}
+#vat, #shipping-costs {
+    line-height: 14px;
+    font-size: 14px;
+}
+#total-costs {
+    font-weight: bold;
 }
