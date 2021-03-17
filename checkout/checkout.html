@@ -8,10 +8,10 @@
 <body>
     <!--<iframe src="../navigation.html" title="Navigation">></iframe>-->
     <main>
-        <div id="checkout-forms">
+        <form id="checkout-form">
             <div class="address-area">
-                <form id="address">
-                    <h4 style="text-align: center">Lieferadresse eingeben</h4>
+                <h4 style="text-align: center">Lieferadresse eingeben</h4>
+                <div id="address">
                     <fieldset id="gender-container">
                         <div>Anrede:</div>
                         <div>
@@ -36,11 +36,11 @@
                         <label for="town">Stadt:</label>
                         <input id="town" name="town" type="text"/>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="payment-area">
                 <h4 style="text-align: center">Bezahlen</h4>
-                <form id="creditCardPayment">
+                <div id="creditCardPayment">
                     <div id="number-container">
                         <label for="number">Kreditkartennummer</label>
                         <input id="number" name="number" type="text"/>
@@ -53,9 +53,15 @@
                         <label for="cvv">Prüfnummer</label>
                         <input id="cvv" name="cvv" type="text"/>
                     </div>
-                </form>
+                </div>
+
+                <input id="consent" name="consent" type="checkbox" value="Ich stimme den Allgemeinen Geschäftsbedingungen zu.">Ich stimme den Allgemeinen Geschäftsbedingungen zu.</input>
+                <div id="actions">
+                    <a id="pay-cancel" href="/">Abbrechen</a>
+                    <input id="pay-complete" type="submit" value="Bezahlen"/>
+                </div>
             </div>
-        </div>
+        </form>
         <div class="costs-area">
 
         </div>

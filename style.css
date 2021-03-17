@@ -1,8 +1,9 @@
-#checkout-forms {
+#checkout-form {
     border: 3px solid black;
     border-radius: 7px;
     padding: 11px;
     width: 27em;
+    background-color: aliceblue;
 }
 .address-area, .payment-area {
     margin-left: auto;
@@ -53,4 +54,20 @@ input[type="text"] {
 }
 #cvv {
     width: 100%;
+}
+#consent {
+    margin-top: 13px;
+}
+#actions {
+    margin-top: 10px;
+}
+#pay-complete {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    height: 3.5em;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: lightgreen;
 }
