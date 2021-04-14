@@ -1,0 +1,121 @@
+.pbild {
+  float: left;
+  width: 20%;
+}
+.pdetails {
+  float: left;
+  width: 37%;
+}
+.panzahl, .pentfernen, .ppreis {
+  float: left;
+  width: 10%;
+}
+.plpreis {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+.einkauf-wagen:before, .clabels:before, .p:before, .alles-anzahl:before, .einkauf-wagen:after, .clabels:after, .p:after, .alles-anzahl:after {
+  content: '';
+  display: table;
+}
+.einkauf-wagen:after, .clabels:after, .p:after, .alles-anzahl:after {
+  clear: both;
+}
+.p .ppreis:before, .p .plpreis:before, .alles-data:before {
+  content: '€';
+}
+
+body {
+  padding: 0px 30px 30px 20px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+h1 {
+  font-weight: 100;
+}
+label {
+  color: #aaa;
+}
+
+.p {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.p .pbild {
+  text-align: center;
+}
+.p .pbild img {
+  width: 100px;
+}
+.p .pdetails .ptitle {
+  margin-right: 20px;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+.p .pdetails .pbeschreibung {
+  margin: 5px 20px 5px 0;
+}
+.p .panzahl input {
+  width: 40px;
+}
+
+.alles .alles-anzahl {
+  float: right;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: right;
+}
+.alles .alles-anzahl label {
+  float: left;
+  width: 75%;
+  text-align: right;
+}
+.alles .alles-anzahl-total {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+.end {
+  float: right;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 25px;
+}
+
+.end:hover {
+  background-color: #494;
+}
+
+@media screen and (max-width: 650px) {
+  .einkauf-wagen {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  .pbild {
+    float: right;
+    width: auto;
+  }
+  .pbild img {
+    margin: 0 0 10px 10px;
+  }
+  .pdetails {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+  .ppreis {
+    clear: both;
+    width: 70px;
+  }
+  .panzahl {
+    width: 100px;
+  }
+  .panzahl input {
+    margin-left: 20px;
+  }
+  .clabels label {
+	  color: transparent;
+  }
+}
