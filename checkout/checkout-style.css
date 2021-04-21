@@ -1,5 +1,11 @@
 body {
     background-color: aliceblue;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+h1 {
+    font-weight: 100;
+    padding: 0px 30px 0px 15px;
 }
 main {
     padding: 11px;

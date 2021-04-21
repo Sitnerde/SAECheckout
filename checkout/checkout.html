@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Checkout</title>
     <link href="checkout-style.css" type="text/css" rel="stylesheet"/>
-    <link href="../style.css" type="text/css" rel="stylesheet"/>
     <link href="cart-favicon.ico" type="image/x-icon" rel="icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='../jquery.min.js'></script>
+    <script src="checkout-script.js"></script>
 </head>
 <body>
+    <h1>Checkout</h1>
     <!--<iframe src="../navigation.html" title="Navigation">></iframe>-->
     <main>
         <form id="checkout-form">
@@ -18,7 +20,7 @@
                     <fieldset id="gender-container">
                         <div>Anrede:</div>
                         <div>
-                            <input id="male" name="gender" value="Herr" type="radio"/><label for="male">Herr</label>
+                            <input id="male" name="gender" value="Herr" type="radio" checked="checked"/><label for="male">Herr</label>
                             <input id="female" name="gender" value="Frau" type="radio"/><label for="female">Frau</label>
                         </div>
                     </fieldset>
@@ -61,11 +63,12 @@
                     </div>
                 </div>
 
-                <input id="consent" name="consent" type="checkbox" value="Ich stimme den Allgemeinen Geschäftsbedingungen zu.">Ich stimme den Allgemeinen Geschäftsbedingungen zu.</input>
+                <input id="consent" name="consent" type="checkbox"/>Ich stimme den Allgemeinen Geschäftsbedingungen zu.
                 <div id="actions">
-                    <a id="pay-cancel" href="../index.html">Abbrechen</a>
-                    <input id="pay-complete" type="submit" value="Bezahlen"/>
+                    <a id="pay-cancel" href="../cart/cart.html">Abbrechen</a>
+                    <button id="pay-complete" type="button">Bezahlen</button>
                 </div>
+                <p id="message"></p>
             </div>
         </form>
         <div class="costs-area">
